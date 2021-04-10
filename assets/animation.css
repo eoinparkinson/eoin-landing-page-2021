@@ -1,0 +1,74 @@
+/*-------------------Text slide-up transition---------------------*/
+@keyframes slideup {
+    0% {
+      transform: translateY(200px) rotate(20deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+/*---------------------Background fade in-------------------------*/
+@keyframes fadebackground {
+    0% {background-color: #08090d;}
+    50% {background-color: #161925;}
+    100% {background-color: #08090d;}
+  }
+
+/*-------------------Text fade-in stuff here----------------------*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.slide-up {
+    transform: translateY(200px) rotate(15deg);
+    animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards, fadein 2s;
+    transform-origin: top center;
+}
+
+.reveal {
+    display: flex;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.red-dot {
+    height: 20px;
+    width: 20px;
+    background-color: #c1292e;
+    border-radius: 50%;
+    display: inline-block;
+  }
