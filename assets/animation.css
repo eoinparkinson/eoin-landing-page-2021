@@ -65,10 +65,3 @@
             animation: fadein 1s;
 }
 
-.red-dot {
-    height: 20px;
-    width: 20px;
-    background-color: #c1292e;
-    border-radius: 50%;
-    display: inline-block;
-  }
