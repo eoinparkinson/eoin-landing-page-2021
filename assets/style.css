@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: #161925;
     animation: fadebackground 5s infinite;
-    font-size: 180%;
+    font-size: 100%;
 }
 
 .main-container {
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     color: #ffffff;
     overflow: hidden;
     margin-top: 0;
@@ -66,6 +66,13 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
 }
 
-.underline-text {
-    text-decoration: underline;
+.text-content {
+    word-wrap: break-word;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5%;
+    font-size: 0.5em;
 }
