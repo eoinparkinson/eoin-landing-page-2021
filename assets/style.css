@@ -4,26 +4,32 @@ body {
     margin: 0;
     background-color: #161925;
     animation: fadebackground 5s infinite;
-    font-size: 100%;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100%;
+    height: 90%;
     margin: 0;
     position: absolute;
     background-color: #161925;
     overflow: hidden;
     animation: fadebackground 5s infinite;
 }
+
 .flex-center {
     justify-content: center;
     align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Press Start 2P', cursive;
     color: #ffffff;
     overflow: hidden;
@@ -68,6 +74,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 .text-content {
     word-wrap: break-word;
+}
+
+.description-div {
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+
+a {
+    color: coral;
 }
 
 .footer-text {
